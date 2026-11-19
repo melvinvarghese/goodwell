@@ -43,7 +43,7 @@
  // The tab quietly asks to be revisited after the visitor leaves it.
  let awayAt=0;
  document.addEventListener("visibilitychange",()=>{
-  if(document.hidden){awayAt=Date.now();document.title="Come back. — Hearthly";}
-  else if(awayAt){const seconds=Math.max(1,Math.round((Date.now()-awayAt)/1000));document.title="Hearthly — Your home, finally listening.";const note=$("#personalNote");if(note)note.textContent="You were away for "+seconds+" seconds. We waited.";awayAt=0;}
+  if(document.hidden){awayAt=Date.now();document.title="Come back. — Morrow";}
+  else if(awayAt){const seconds=Math.max(1,Math.round((Date.now()-awayAt)/1000));document.title="Morrow — Your home, finally listening.";const note=$("#personalNote");if(note)note.textContent="You were away for "+seconds+" seconds. We waited.";awayAt=0;}
  });
 })();
